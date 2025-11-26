@@ -1,140 +1,53 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riwaj's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio of Riwaj Maharjan</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/78444c0a5e.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Riwaj Maharjans's Porfolio</h1>
+	<header class="header">
+		<nav>
+			<div class="title-container">
+				<i class="fas fa-briefcase"></i>
+				<h1 class="header-title">Riwaj's Portfolio</h1>
+			</div>
 
-            <div class="nav-right">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="">projects</a></li>
-                </ul>
-                <button class="btn btn-contact">contact</button>
-            </div>
-            
-        </nav>
-        
-    </header>
+			<div style="position: relative;">
+				<i class="fas fa-bars" id="menuBtn"></i>
 
-    <main>
-        <section class="home" id="home">
-            <div class="filter" style="max-width: 98vw;">
-                <h2>I Am a Web Developer</h2>
-                <div class="btn-con">
-                    <button class="btn btn-primary">View Work</button>
-                    <button class="btn btn-secondary">Hire Me</button>
-                </div>
-            </div>
-        </section>
+				<ul class="nav-content">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#home">About</a></li>
+					<li><a href="#home">Projects</a></li>
+					<li><a href="#home">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
+	<main>
+		<section class="hero-section">
+			<div class="video-content">
+				<video autoplay loop>
+				  <source src="https://cdn.pixabay.com/video/2025/10/05/308073_large.mp4" type="video/mp4">
+				  Your browser does not support the video tag.
+				</video>
+			</div>
+			
+			<div class="about-filter"></div>
 
-        <section class="section About" id="about">
-          <div class="container">
-            <h2 class="section-title">About Me</h2>
+			<div class="about-content">
+				<h2>Riwaj Maharjan</h2>
+				<p>Frontend Developer & UI/UX Enthusiast</p>
+			</div>
+		</section>
+	</main>
 
-            <div class="about-content">
-              <img src="https://thumbs.dreamstime.com/b/stunning-cosmic-images-351308392.jpg" alt="Riwaj Maharjan" class="profile-img">
-
-              <div class="about-text">
-                <h3>Hi, I'm <span>Riwaj Maharjan</span></h3>
-
-                <p>
-                  I’m a passionate web developer who enjoys building clean, responsive,
-                  and modern web experiences. I love working with frontend technologies
-                  and improving my skills every day.
-                </p>
-
-                <p>
-                  Currently, I'm learning React, animations, and UI/UX concepts to level up
-                  my work and create better digital experiences.
-                </p>
-
-                <ul class="info-list">
-                  <li><strong>From:</strong> Kathmandu, Nepal</li>
-                  <li><strong>Role:</strong> Frontend Developer</li>
-                  <li><strong>Skills:</strong> HTML, CSS, JS, React</li>
-                </ul>
-
-                <a href="#contact" class="about-btn">Contact Me</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section projects" id="projects">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-
-                <div class="card-grid">
-                    
-                    <div class="card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSMrkWm6nY6XGv8lP0viM8GQAbi2JBd19KCw&s" alt="Project 1">
-                        <h3>Portfolio Website</h3>
-                        <p>A responsive portfolio website built using HTML, CSS, and JavaScript. Showcases my skills, projects, and contact information with a clean UI.</p>
-                        <a href="#" class="card-btn">View Project</a>
-                    </div>
-
-                    <div class="card">
-                        <img src="https://www.bytewebster.com/javascriptprojects/uploads/images/todo-list-javascriptapp.png" alt="Project 2">
-                        <h3>Todo App</h3>
-                        <p>A simple and beautiful To-Do app with dark mode, task filtering, and localStorage saving. Built using vanilla JavaScript.</p>
-                        <a href="#" class="card-btn">View Project</a>
-                    </div>
-
-                    <div class="card">
-                        <img src="https://as1.ftcdn.net/v2/jpg/04/91/54/18/1000_F_491541875_c0vIhFwHnRZvmRfJELvJxtSQbRDOwbGC.jpg" alt="Project 3">
-                        <h3>Weather Forecast Web App</h3>
-                        <p>A weather app built using the OpenWeather API that displays real-time temperature, humidity, and weather conditions with dynamic backgrounds.</p>
-                        <a href="#" class="card-btn">View Project</a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-            
-        <section class="contact" id="contact">
-            <div class="container">
-                <h2 class="contact-title">Contact Me</h2>
-
-                <div class="contact-content">
-
-                    <div class="contact-info">
-                        <h3>Get In Touch</h3>
-                        <p>If you have a project idea, want to collaborate, or just want to say hello — feel free to reach out!</p>
-
-                        <ul>
-                            <li><strong>Email:</strong> riwajmaharjan@gmail.com</li>
-                            <li><strong>Location:</strong> Kathmandu, Nepal</li>
-                        </ul>
-                    </div>
-
-                    <form class="contact-form">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <textarea placeholder="Your Message" required></textarea>
-
-                        <button type="submit" class="contact-btn">Send Message</button>
-                    </form>
-
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <p>© 2025 Riwaj Maharjan. All rights reserved.</p>
-    </footer>
-
-
+	<script src="script.js"></script>
 </body>
 </html>
